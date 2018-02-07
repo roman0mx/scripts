@@ -4,6 +4,7 @@ import os
 import subprocess
 
 
+
 ## Incluir la '/' al final del Path definido
 myPath="/opt/convert/"
 OrigFileExt = ".sln16"
@@ -26,3 +27,5 @@ for i in range (0, len(myFileList)):
                         subprocess.call(["asterisk", "-rx", "file convert " + myPath + myFileList[i] + " " + myPath + fn + DestFileExt])
 
 ## Fin
+
+
